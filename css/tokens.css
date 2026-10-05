@@ -1,0 +1,146 @@
+/* ============================================================
+   ManakAI — design tokens
+   KIMI's art direction (light art-directed sheet, one accent,
+   editorial type, spring motion) in ManakAI's blues.
+   Tier 1 is the only place a literal appears.
+   ============================================================ */
+
+:root {
+  /* ── Tier 1 — raw ─────────────────────────────────────────────────────── */
+  --raw-pearl-50:  #f6f7fb;      /* the ground */
+  --raw-pearl-100: #eceef6;      /* backdrop contour lines, muted surface */
+  --raw-pearl-200: #dfe2ee;      /* hairlines & dividers */
+  --raw-ink-950:   #0b0b18;      /* all body copy */
+  --raw-ink-900:   #14142b;      /* dark panel fill */
+  --raw-indigo-800:#17153b;      /* ManakAI indigo — the dark surface */
+  --raw-indigo-700:#232055;
+  --raw-indigo-600:#2e2a6b;
+  --raw-slate-400: #b8bcd6;      /* muted copy on dark */
+  --raw-slate-500: #6b6f96;
+  --raw-slate-600: #4a4d6e;
+  --raw-blue-600:  #3155d9;      /* primary accent */
+  --raw-blue-500:  #4a6be8;
+  --raw-blue-300:  #9fb0f2;
+  --raw-copper-500:#d98b5f;      /* secondary accent */
+  --raw-copper-600:#b5702f;
+  --raw-green-600: #17795c;      /* verified */
+  --raw-white:     #ffffff;
+
+  --raw-ink-alpha-35:   rgb(11 11 24 / 0.35);
+  --raw-ink-alpha-08:   rgb(11 11 24 / 0.08);
+  --raw-white-alpha-10: rgb(255 255 255 / 0.10);
+  --raw-white-alpha-20: rgb(255 255 255 / 0.20);
+  --raw-white-alpha-40: rgb(255 255 255 / 0.40);
+  --raw-blue-alpha-25:  rgb(49 85 217 / 0.25);
+  --raw-blue-alpha-12:  rgb(49 85 217 / 0.12);
+
+  /* ── type scale ───────────────────────────────────────────────────────── */
+  --raw-font-size-96: 6rem;        /* hero masthead */
+  --raw-font-size-70: 4.375rem;    /* masthead on phones */
+  --raw-font-size-55: 3.4375rem;   /* section mastheads */
+  --raw-font-size-52: 3.25rem;     /* headline below 1024 */
+  --raw-font-size-38: 2.375rem;    /* stat figures */
+  --raw-font-size-36: 2.25rem;     /* years / big figures */
+  --raw-font-size-20: 1.25rem;     /* lead-in, CTA labels */
+  --raw-font-size-18: 1.125rem;    /* meta rows */
+  --raw-font-size-16: 1rem;        /* nav, labels */
+  --raw-font-size-14: 0.875rem;    /* body */
+  --raw-font-size-12: 0.75rem;     /* eyebrows, captions */
+
+  --raw-leading-95:  0.95;
+  --raw-leading-90:  0.9;
+  --raw-leading-72:  0.72;
+  --raw-leading-110: 1.1;
+
+  --raw-tracking-stat:    -0.08em;
+  --raw-tracking-label:   -0.04em;
+  --raw-tracking-eyebrow: -0.02em;
+
+  --raw-radius-8:  0.5rem;
+  --raw-radius-16: 1rem;
+  --raw-radius-24: 1.5rem;
+
+  --raw-duration-fast:   150ms;
+  --raw-duration-normal: 250ms;
+  --raw-duration-slow:   700ms;
+
+  /* ── Tier 2 — roles ───────────────────────────────────────────────────── */
+  --background:        var(--raw-pearl-50);
+  --foreground:        var(--raw-ink-950);
+  --foreground-muted:  var(--raw-ink-alpha-35);
+  --foreground-soft:   var(--raw-slate-500);
+
+  --surface:           var(--raw-white);
+  --surface-muted:     var(--raw-pearl-100);
+  --surface-soft:      var(--raw-pearl-200);
+  --surface-dark:      var(--raw-indigo-800);
+  --surface-dark-raised: var(--raw-indigo-700);
+  --surface-black:     var(--raw-ink-950);
+
+  --on-dark:           var(--raw-white);
+  --on-dark-muted:     var(--raw-slate-400);
+  --on-dark-faint:     var(--raw-white-alpha-40);
+
+  --border:            var(--raw-pearl-200);
+  --border-strong:     var(--raw-slate-500);
+  --border-on-dark:    var(--raw-indigo-600);
+
+  --accent:            var(--raw-blue-600);
+  --accent-strong:     var(--raw-blue-500);
+  --accent-muted:      var(--raw-blue-alpha-25);
+  --accent-tint:       var(--raw-blue-alpha-12);
+  --accent-2:          var(--raw-copper-500);
+
+  --verified:          var(--raw-green-600);
+  --verified-bg:       rgb(23 121 92 / 0.10);
+  --likely:            var(--raw-copper-600);
+  --likely-bg:         rgb(181 112 47 / 0.12);
+  --unknown:           var(--raw-slate-500);
+  --unknown-bg:        rgb(107 111 150 / 0.12);
+
+  --contour-line:      var(--raw-pearl-200);
+  --contour-line-dark: var(--raw-white-alpha-10);
+
+  --font-display: "Oswald", Impact, sans-serif;
+  --font-sans:    "Space Grotesk", system-ui, -apple-system, sans-serif;
+
+  --type-impact:   var(--raw-font-size-96);
+  --type-display:  var(--raw-font-size-55);
+  --type-display-sm: var(--raw-font-size-52);
+  --type-heading:  var(--raw-font-size-38);
+  --type-year:     var(--raw-font-size-36);
+  --type-title:    var(--raw-font-size-20);
+  --type-lead:     var(--raw-font-size-18);
+  --type-label:    var(--raw-font-size-16);
+  --type-body:     var(--raw-font-size-14);
+  --type-eyebrow:  var(--raw-font-size-12);
+
+  --leading-headline: var(--raw-leading-95);
+  --leading-flat:     var(--raw-leading-90);
+  --leading-cap:      var(--raw-leading-72);
+  --leading-copy:     var(--raw-leading-110);
+
+  --ease-entrance: cubic-bezier(0.2, 0, 0, 1);
+  --ease-plate:    cubic-bezier(0.33, 0, 0, 1);
+  --duration-fast: var(--raw-duration-fast);
+  --duration-normal: var(--raw-duration-normal);
+  --duration-plate: var(--raw-duration-slow);
+
+  --gutter: 1.5rem;
+  --gutter-min: 24px;
+  --type-min: 13px;
+  --copy-min-size: 16px;
+  --head-min: 40px;
+}
+
+/* ── the root font-size bands ──────────────────────────────────────────────
+   A rem is one design pixel of the frame the band was drawn at. Below 1280
+   the root holds at 16px and layouts adapt by breakpoint instead. */
+html { font-size: 16px; }
+@media (max-width: 1920px) { html { font-size: 0.833333vw; } }
+@media (max-width: 1440px) { html { font-size: 1.111111vw; } }
+@media (max-width: 1279px) { html { font-size: 16px; } }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  :root { --type-impact: calc(6rem * 1920 / 1440); --type-display: calc(3.4375rem * 1920 / 1440); }
+}
